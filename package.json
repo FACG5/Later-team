@@ -1,0 +1,26 @@
+{
+  "name": "donia-asala-kanaan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "tape tests/test.js | tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FACG5/Donia-Asala-Kanaan.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FACG5/Donia-Asala-Kanaan/issues"
+  },
+  "homepage": "https://github.com/FACG5/Donia-Asala-Kanaan#readme",
+  "dependencies": {
+    "tap-spec": "^5.0.0",
+    "tape": "^4.9.1"
+  }
+}
