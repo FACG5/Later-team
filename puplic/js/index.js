@@ -1,4 +1,4 @@
-(function () {
+/*(function () {
   var search = document.getElementsByClassName("search-btn")[0];
   var inp = document.getElementsByClassName("search-query")[0];
 
@@ -19,4 +19,23 @@
     })
 
 
-  })();
+  })();*/
+function make_connection(url,cb) {
+    var xhr = new XMLHttpRequest();
+    let objct;
+    xhr.onreadystatechange = function () {
+        console.log(xhr.readyState);
+        
+        if (xhr.readyState == 4&&xhr.status==200) {
+            objct=JSON.parse(xhr.responseText);
+                console.log(objct.projects);
+
+                return cb(objct);      
+        }
+
+
+    }
+    xhr.open("GET", url, true);
+    xhr.send();
+
+}
