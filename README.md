@@ -1,6 +1,5 @@
 # Title
 
-(link)
 
 #### About:
 The basic idea of the site is to write the project's name you want to search for,
