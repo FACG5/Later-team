@@ -11,7 +11,7 @@ btn.addEventListener('click', function () {
 
     var count = prompt("Enter The Number Of Photos The Maximum is 30??");
     footer.setAttribute("style", 'visibility: hidden;');
-    var obj = make_connection("https://api.behance.net/v2/projects?q=" + query.value + "&client_id=PO4GuFxL3OfqGmKJjOYFE3D5y3pdKZuV",
+    var obj = make_connection("https://cors-anywhere.herokuapp.com/api.behance.net/v2/projects?q=" + query.value + "&client_id=PO4GuFxL3OfqGmKJjOYFE3D5y3pdKZuV",
 
         add_images_to_body, count);
 
@@ -19,7 +19,7 @@ btn.addEventListener('click', function () {
 
 function add_images_to_body(obj, count) {
     var arr = [];
-    
+
     for (var i = 0; i < count; i++) {
         arr.push({
             "img": (obj.projects)[i].covers["404"], "img2": (obj.projects)[i].owners[0].username
@@ -39,7 +39,7 @@ function add_to_body(arr, obj) {
         img.src = arr[i].img;
         img.setAttribute("class", "box");
         img.addEventListener('click', function () {
-            make_connection("https://api.behance.net/v2/users/" + arr[i].img2 + "?client_id=PO4GuFxL3OfqGmKJjOYFE3D5y3pdKZuV", addSection);
+            make_connection("https://cors-anywhere.herokuapp.com/api.behance.net/v2/users/" + arr[i].img2 + "?client_id=PO4GuFxL3OfqGmKJjOYFE3D5y3pdKZuV", addSection);
             footer.setAttribute("style", 'visibility: visible;');
  });
         add(result_section,img);
