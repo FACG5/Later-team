@@ -18,10 +18,7 @@ when you choose any project you want, the page will be updated the project's det
 ### How ?
 1. The user choose the project that he want from the populars projecrs  list to start  watching it's details.
 2. When the user type the name of the project in the search text field and choose to search, a request to projects Data base API is sent and the response presents all the matching projects with it's details.
-3. when you click on the projects that appeared in the results field the details to the user/owner will appear thats contain 1. First name.
-2. Last name.
-3. Followers.
-4. following.
+3. when you click on the projects that appeared in the results field the details to the user/owner will appear thats contain: (First name ,last name, followers, following and behance account).
 
 ### Splitting the Work:
    . In the first day we made a sketch of our site and decided the functions and our API's.   
