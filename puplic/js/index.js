@@ -1,3 +1,4 @@
+var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 
 function make_connection(url, cb,count) {
     var xhr = new XMLHttpRequest();
