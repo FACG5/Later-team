@@ -9,6 +9,7 @@ function make_connection(url, cb,count) {
             console.log(objct.projects);
             if (typeof cb == 'function')
                 cb(objct,count);
+
         }
 
 
@@ -17,3 +18,15 @@ function make_connection(url, cb,count) {
     xhr.send();
 
 }
+
+ function gitProject (result){  
+    return result.projects[0].name;
+    }
+
+    function gitUserData (result){
+        return result.user.first_name + result.user.last_name;
+    }
+
+if (typeof module !== 'undefined') {
+    module.exports ={make_connection,gitProject, gitUserData};
+  }
