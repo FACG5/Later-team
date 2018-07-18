@@ -57,7 +57,7 @@ function addSection(obj) {
 
     textCont(h1,(obj.user.first_name+" " + obj.user.last_name));
     h1.classList.add("userName");
-   
+
     //Create Elements ....
     const h2 = element("h2");
     const h22 = element("h2");
@@ -85,7 +85,7 @@ function addSection(obj) {
     add(right, h2);
     add(right, h22);
     add(right, a);
-  
+
 }
 
 
