@@ -9,7 +9,7 @@ height:700px;
 background: url(../img/photo-1504626835342-6b01071d182e.jpeg);
 background-position:top center;
 background-repeat: no-repeat;
-background-size:cover; 
+background-size:cover;
 }
 
 header .container{
@@ -20,37 +20,47 @@ background: rgba(0,0,0,0.7);
 
 }
 
-header .container .input_container{
-   width: 100%;
-   padding-top: 200px; 
+header .title{
+  font-size: 74px;
+  font-family: fantasy;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  padding-top: 11%;
+  font-style: italic;
+  color: #fff;
 }
 
-    
-    
+header .container .input_container{
+   width: 100%;
+   padding-top: 91px;
+}
+
+
+
 header .container .input{
 
     width:40%;
-    
+
 
 margin: 0 auto;
 
 
 }
 header .container .input_container input[type="text"]{
-    width:100%;
-    border: 0 #eee solid;
-background:rgba(0,0,0,0); 
+width:100%;
+border: 0 #eee solid;
+background:rgba(0,0,0,0);
 padding-left:3vh;
 font-size:40px;
 color: white;
 font-family: Lato;
-height: 70px;     
+height: 70px;
 text-align: center;
 margin: 0 auto;
-
 border: .5px #eee solid;
 border-radius: 100px;
-
+outline: none;
 
 }
 
@@ -64,7 +74,7 @@ width: 280px;
 margin: 0 auto;
 margin-top: 60px;
 height:70px;
-background:rgb(14, 110, 189); 
+background:rgb(14, 110, 189);
 border: 0 white solid;
 border-radius: 100px;
 
@@ -77,12 +87,12 @@ section .container{
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
-margin-top:200px; 
+margin-top:200px;
 width: 80%;
 margin: 200px auto;
 
 
-}    
+}
 
 section .container .box{
     width: 400px;
@@ -97,40 +107,40 @@ section .container .box:hover{
 }
 section .section_container{
 
-    height:600px;
-    background: #eee;
-padding-top:50px; 
+height:600px;
+background: #eee;
+padding-top:50px;
 visibility: hidden;
 }
 section .section_container .left{
     margin-top:50px;
-    margin-left:150px;  
+    margin-left:150px;
     width: 250px;
     height:250px;
-    border-radius:100%; 
+    border-radius:100%;
     background: url(../img/emile-perron-190221-unsplash.jpg);
     background-position: center center;
 background-size: cover;
-margin: 0 auto;   
+margin: 0 auto;
 
 }
 
 section .section_container .right h1{
 
-    color:black;
-    font-size: 40px;
-text-align: center;   
+color:black;
+font-size: 40px;
+text-align: center;
 
 }
 section .section_container .right h2{
-margin-top:20px; 
-    color:blue;
-    font-size: 30px;
+margin-top:20px;
+color:blue;
+font-size: 30px;
 margin-bottom:20px;
-text-align: center; 
+text-align: center;
 }
 section .section_container .right a{
-        margin-top:80px; 
+        margin-top:80px;
         color:black;
         font-size: 30px;
        text-decoration: none;
@@ -138,24 +148,24 @@ section .section_container .right a{
        margin-left: -40px;
     }
     section .section_container .right a:hover{
-        padding-top:80px; 
+        padding-top:80px;
         color:skyblue;
         font-size: 30px;
        text-decoration: none;
-    
+
     }
 section .section_container .right{
     margin-top:125px;
     margin-left:60px;
     font-size:25px;
-    font-family: lato;  
+    font-family: lato;
     width:400px;
     color:grey;
-margin: 50px auto;   
+    margin: 50px auto;
 
 }
 span{
-    margin-right:20px; 
+    margin-right:20px;
     color:grey;
 }
 .followers{
@@ -163,41 +173,43 @@ margin-right: 30px;
 }
 @media  (max-width:1100px){
 
-    
+
     header .container .input{
 
         width:80%;
-        
-    
+
+
     margin: 0 auto;
-    
-    
+
+
     }
     header .container .input_container input[type="text"]{
         width:100%;
     font-size:25px;
-    
+
     }
-    
+     h1 {
+
+
+     }
     header .container .input_container input[type="submit"]{
     display: block;
     width: 60%;
     margin: 0 auto;
     margin-top: 60px;
     height:70px;
-    background:rgb(14, 110, 189); 
+    background:rgb(14, 110, 189);
     border: 0 white solid;
     border-radius: 100px;
-    
     font-size:40px;
     color:white;
     font-family: lato;
-    
+    outline: none;
     }
-    
+
 
 section .section_container .right h1{
-font-size:20px; 
+font-size:20px;
 }
 section .section_container .right h2{
     font-size:20px;}
@@ -212,7 +224,7 @@ section .section_container .right{
 
 }
 span{
-    margin-right:20px; 
+    margin-right:20px;
     color:grey;
 }
 }
