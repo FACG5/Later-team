@@ -9,11 +9,11 @@ const footer = get(".section_container")[0];
 
 btn.addEventListener('click', function () {
 
-    var count = prompt("Enter The Number Of Photos The Maximum is 30??");
+    //var count = prompt("Enter The Number Of Photos The Maximum is 30??");
     footer.setAttribute("style", 'visibility: hidden;');
     var obj = make_connection("https://cors-anywhere.herokuapp.com/api.behance.net/v2/projects?q=" + query.value + "&client_id=PO4GuFxL3OfqGmKJjOYFE3D5y3pdKZuV",
 
-        add_images_to_body, count);
+        add_images_to_body, 30);
 
 });
 
@@ -22,10 +22,12 @@ function add_images_to_body(obj, count) {
 
     for (var i = 0; i < count; i++) {
         arr.push({
-            "img": (obj.projects)[i].covers["404"], "img2": (obj.projects)[i].owners[0].username
+            "img": (obj.projects)[i].covers["404"],
+
+           "img2": (obj.projects)[i].owners[0].username
         });
     }
-    add_to_body(arr)
+    add_to_body(arr);
     return arr;
 }
 
@@ -41,6 +43,7 @@ function add_to_body(arr, obj) {
         img.addEventListener('click', function () {
             make_connection("https://cors-anywhere.herokuapp.com/api.behance.net/v2/users/" + arr[i].img2 + "?client_id=PO4GuFxL3OfqGmKJjOYFE3D5y3pdKZuV", addSection);
             footer.setAttribute("style", 'visibility: visible;');
+
  });
         add(result_section,img);
     }
@@ -64,7 +67,7 @@ function addSection(obj) {
     const span = element("span");
     const span2 = element("span");
     const a = element("a");
-    const left = element("div");
+    //const left = element("div");
     const right = element("div");
     left.classList.add("left");
     right.classList.add("right");
@@ -107,12 +110,3 @@ function element(str) {
 function textCont(element1, text) {
     element1.textContent=text;
 }
-
-
-
-
-
-/*
-
-
-*/
